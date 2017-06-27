@@ -9,8 +9,8 @@ python readmultisamplemeta.py *.multisample
 ### writemultisamplemeta
 python writemultisamplemeta.py --xml=data.xml file.multisample
 
-```
 data.xml:
+```
 <category>Note3</category>
 <creator>Sfz2bitwig2</creator>
 <description>test2</description>

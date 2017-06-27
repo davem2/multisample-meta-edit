@@ -32,9 +32,9 @@ def main():
     #etree.dump(xml)
 
     newdata = {}
-    newdata['category'] = gettagvalue('category')
-    newdata['creator'] = gettagvalue('creator')
-    newdata['description'] = gettagvalue('description')
+    newdata['category'] = gettagvalue(xml,'category')
+    newdata['creator'] = gettagvalue(xml,'creator')
+    newdata['description'] = gettagvalue(xml,'description')
     newdata['keywords'] = []
     for k in xml.findall('keywords/keyword'):
         newdata['keywords'].append(k.text)
@@ -74,7 +74,7 @@ def main():
     return
 
 
-def gettagvalue(tag=None):
+def gettagvalue(xml=None,tag=None):
     try:
         value = xml.find(tag).text
     except:
