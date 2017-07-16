@@ -17,7 +17,6 @@ def parse_commandline():
     parser.add_argument('file', nargs='+', help='multisample file(s) to modify')
     parser.add_argument('-x', '--xml', help='xml data to write')
     parser.add_argument('-m', '--merge', action='store_true', help='merge xml with existing')
-    parser.add_argument('--noloop', default=False, action='store_true', help='disable wav loop point extraction')
 
     return parser.parse_args()
 
