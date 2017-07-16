@@ -4,10 +4,15 @@ Edit Bitwig Studio multisample instrument metadata
 
 ## Usage
 ### readmultisamplemeta
+```
 python readmultisamplemeta.py file.multisample
 python readmultisamplemeta.py *.multisample
+```
+
 ### writemultisamplemeta
+```
 python writemultisamplemeta.py --xml=data.xml file.multisample
+```
 
 data.xml:
 ```
